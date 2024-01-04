@@ -150,6 +150,7 @@
         a {
           font-size: 20px;
           color: #2E2E2E;
+          text-transform: uppercase;
         }
       }
     }
@@ -239,9 +240,23 @@
 	}
 }
 @media only screen and (max-width: 750px) {
+  .header__nav-mobile {
+    width: 100%;
+    padding-left: 30px;
+    margin-bottom: 0;
+  }
+  .header__mobile-wrapper {
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0 30px;
+    & button {
+      width: 100%;
+    }
+  }
   .header__mobile {
     align-items: center;
-    padding-left: 0;
+    justify-content: space-between;
+    padding: 35px 0 80px 0;
   }
   .header__lang a {
     margin-right: 0;

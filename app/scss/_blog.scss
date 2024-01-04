@@ -52,6 +52,7 @@
     box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.1);
     margin: 0 15px 30px 15px;
     transition: all 0.5s ease;
+    position: relative;
     a {
       color: #2E2E2E;
     }
@@ -101,14 +102,16 @@
     }
     &-text {
       line-height: 140%;
-      margin: 16px 0 23px 0;
+      margin: 16px 0 37px 0;
     }
     &-link {
+      position: absolute;
+      bottom: 20px;
+      width: 89%;
       color: #2E2E2E;
       font-size: 15px;
       font-weight: 500;
       display: block;
-      position: relative;
       transition: all 0.5s ease;
       &::before {
         position: absolute;
@@ -331,7 +334,7 @@
   }
   .blog__cat-item {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
   .blog__cat-items {
     width: 100%;
@@ -342,5 +345,9 @@
   }
   .blog-head {
     margin: 100px 0 50px 0;
+  }
+  .blog__row-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 }

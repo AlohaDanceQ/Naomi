@@ -96,7 +96,6 @@
   justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, 0.13);
   padding: 35px 0 30px 0;
-  font-family: 'Lato', sans-serif;
   &-copy {
     color: rgba(27, 29, 28, 0.55);
   }
@@ -151,5 +150,19 @@
   .footer__down-links {
     order: 3;
     margin-top: 23px;
+  }
+}
+@media only screen and (max-width: 750px){
+  .footer__down-links {
+    display: flex;
+  }
+  .footer__down-link {
+    font-size: 12px;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+  .footer__down-copy {
+    font-size: 14px;
   }
 }

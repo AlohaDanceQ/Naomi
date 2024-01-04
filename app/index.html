@@ -85,7 +85,7 @@
             </ul>
           </nav>
           <div class="header__btn-container">
-            <button class="main__btn header__btn air-open-btn" data-popup-current="callback_form">Записатися
+            <button class="main__btn header__btn air-open-btn" data-popup-current="send__form">Записатися
               онлайн</button>
           </div>
         </div>
@@ -140,7 +140,12 @@
             </div>
           </div>
           <div class="head__img">
-            <img src="img/head__img.jpg" alt="head">
+            <picture>
+              <source srcset="img/404-img.jpg" media="(min-width: 1250px)" width="1200" height="500" />
+              <source srcset="img/about__img.jpg" media="(min-width: 750px)" width="800" height="400" />
+              <img src="img/head__img.jpg" alt="A description of the image." width="400" height="400" loading="eager"
+                decoding="sync" />
+            </picture>
           </div>
         </div>
       </section>
@@ -793,8 +798,16 @@
               </div>
             </div>
           </div>
-          <div class="map" id="map">
+          <div class="map-box">
+            <div class="map" id="map">
 
+            </div>
+            <div class="select-wrapper">
+              <select id="map-select">
+                <option value="dnipro">Днiпро</option>
+                <option value="donetsk">Донецк</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
@@ -981,6 +994,14 @@
         </div>
       </div>
     </div>
+    <div class="popup__form-body popup-air" data-air="send__form">
+      <div class="popup__form">
+        <div class="popup__form-send">
+          <h3 class="form-send-title">Ваша заявка відправлена</h3>
+          <p class="form-send-subtitle">Незабаром наші фахівці зв'яжуться з Вами</p>
+        </div>
+      </div>
+    </div>
 
   </div>
 
@@ -989,6 +1010,7 @@
   <script src="js/scripts.min.js"></script>
   <script src="js/popup.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/anim.js"></script>
 
   <script>
     //map

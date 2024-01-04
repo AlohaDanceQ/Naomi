@@ -20,14 +20,14 @@
 }
 
 .air-close {
-	width: 15px;
-	height: 15px;
+	width: 25px;
+	height: 25px;
 	position: absolute;
 	right: 40px;
 	top: 20px;
 	z-index: 555;
 	cursor: pointer;
-	background: url("https://i.ibb.co/x21fyFk/close-icg.png")no-repeat;
+	background: url("https://www.svgrepo.com/show/470376/cross.svg")no-repeat;
 	background-size: cover;
 	background-position: center;
 	transition: all ease 0.3s;
@@ -133,6 +133,10 @@
 		padding: 20px 18px;
 		font-size: 16px;
 		transition: all 0.3s ease;
+    color: #2E2E2E;
+    & option {
+      color: #2E2E2E;
+    }
 		&:focus {
 			//border: 1px solid #fff;
 			transition: all 0.3s ease;
@@ -194,4 +198,11 @@
 					height: 100%;
 			}
 	}
+}
+
+@media only screen and (max-width: 750px){
+  .popup__form-body {
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+  }
 }

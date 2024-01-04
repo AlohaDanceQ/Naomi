@@ -46,7 +46,7 @@ gulp.task('scripts', function () {
     'app/js/common.js', // Always at the end
   ])
     .pipe(concat('scripts.min.js'))
-    .pipe(uglify({ output: { comments: false } }))
+    //.pipe(uglify({ output: { comments: false } }))
     .pipe(gulp.dest('app/js'))
     .pipe(browserSync.stream())
 });
